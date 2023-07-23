@@ -11,7 +11,7 @@ export default {
   serverMinify: true,
   serverModuleFormat: "esm",
   serverPlatform: "neutral",
-  serverNodeBuiltinsPolyfill: [
+  aserverNodeBuiltinsPolyfill: [
       'child_process',
       'os',
       'perf_hooks',
@@ -24,6 +24,21 @@ export default {
       'fs',
       'process',
   ],
+  serverNodeBuiltinsPolyfill: {
+    modules: {
+      child_process: true,
+      os: true,
+      perf_hooks: true,
+      url: true,
+      http: true,
+      https: true,
+      zlib: true,
+      stream: true,
+      util: true,
+      fs: true,
+      process: true,
+    }
+  },
   // appDirectory: "app",
   // assetsBuildDirectory: "public/build",
   // serverBuildPath: "build/index.js",
