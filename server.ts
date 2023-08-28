@@ -42,6 +42,8 @@ export const handler = {
                 }
             );
         } catch (error) {
+            console.log('asset error')
+            console.log(error)
         }
 
         try {
@@ -50,6 +52,7 @@ export const handler = {
             };
             return await handleRemixRequest(request, loadContext);
         } catch (error) {
+            console.log('remix error')
             console.log(error);
             return new Response("An unexpected error occurred", {status: 500});
         }
