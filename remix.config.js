@@ -11,19 +11,6 @@ export default {
   serverMinify: true,
   serverModuleFormat: "esm",
   serverPlatform: "neutral",
-  aserverNodeBuiltinsPolyfill: [
-      'child_process',
-      'os',
-      'perf_hooks',
-      'url',
-      'http',
-      'https',
-      'zlib',
-      'stream',
-      'util',
-      'fs',
-      'process',
-  ],
   serverNodeBuiltinsPolyfill: {
     modules: {
       child_process: true,

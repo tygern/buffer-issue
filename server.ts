@@ -58,7 +58,7 @@ export const handler = {
 
 const config: TraceConfig = {
     exporter: new ConsoleSpanExporter(),
-    service: {name: 'buffer-issue'}
+    service: {name: 'remix-otel-issue'}
 }
 
 export default instrument(handler, config)
